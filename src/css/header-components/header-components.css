@@ -1,0 +1,25 @@
+@layer components{
+    .logo-container{
+        @apply mt-4 ml-4 w-64 pt-0.5 pb-0.5 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-azul-claro hover:text-gray-900 hover:bg-gray-500;
+    }
+
+    .logo-symbol{
+        @apply block float-left text-3xl mt-1 ml-11;
+    }
+
+    .logo-text{
+        @apply block float-right text-4xl mt-1.5 mr-16 transition duration-100;
+    }
+
+    .nav-menu{
+        @apply flex h-20 items-center justify-end text-2xl text-center mr-6;
+    }
+
+    .menu-item{
+        @apply mr-5 ml-5 tracking-wider flex-none;
+    }
+
+    .menu-link{
+        @apply block transition duration-200 hover:text-azul-claro transform hover:scale-125;
+    }
+}
