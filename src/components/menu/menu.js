@@ -1,4 +1,5 @@
 import Menu from '../../templates/menu.html';
+import '@styles/fuentes/fuentes.css';
 
 const loadMenu=()=>{
     const header=document.getElementById('header');
