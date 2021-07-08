@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       backgroundImage: theme =>({
         'body-pattern':"url('/src/assets/images/pattern.png')"
-      })
+      }),
+      colors:{
+        "azul-claro":"#37bcf9",
+        "azul-oscuro":"#0370b9",
+      }
     },
   },
   variants: {
