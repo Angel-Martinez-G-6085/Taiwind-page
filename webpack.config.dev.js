@@ -16,6 +16,7 @@ module.exports={
             '@styles': path.resolve(__dirname,'./src/css/'),
             '@components': path.resolve(__dirname,'./src/components/'),
             '@public': path.resolve(__dirname,'./public/'),
+            '@fonts': path.resolve(__dirname,'./src/assets/fonts/'),
         }
     },
     devServer:{
