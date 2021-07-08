@@ -16,7 +16,10 @@ module.exports={
     resolve:{
         extensions:['.js'],
         alias:{
-            '@styles': path.resolve(__dirname,'./src/scss/'),
+            '@styles': path.resolve(__dirname,'./src/css/'),
+            '@components': path.resolve(__dirname,'./src/components/'),
+            '@public': path.resolve(__dirname,'./public/'),
+            '@fonts': path.resolve(__dirname,'./src/assets/fonts/'),
         }
     },
 
@@ -53,13 +56,17 @@ module.exports={
                 }
             },
             {
-                test:/\.(woff|woff2|ttf|eot|svg)$/,
+                test:/\.(woff|woff2|ttf|eot|svg|otf)$/,
                 loader: 'file-loader',
                 options: {
                     publicPath: '../',
                     outputpath:'./assets/fonts',
                     name: 'assets/fonts/[name].[ext]',
                 }
+            },
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
             },
         ]
     },
