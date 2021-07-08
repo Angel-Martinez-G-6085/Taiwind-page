@@ -2,3 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 @import '@styles/reseteo/reseteo.css';
+@import '@styles/fuentes/fuentes.css';
